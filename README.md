@@ -1,2 +1,2 @@
 # tensorflow-js-knn
-This project attempts to use the computer webcam and the Mobilenet model to train a K-Nearest Neighbors algorithm to classify three different objects in the browser.
+This project uses a webcam and Tensorflow (Java Script) on top of the Mobilenet model to classify three different objects in the browser.
