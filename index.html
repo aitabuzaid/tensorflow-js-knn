@@ -1,12 +1,23 @@
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+      <title>Train a model with TensorFlow.JS and a webcam!</title>
+      <link rel="stylesheet" href="style.css">
     <!-- Load the latest version of TensorFlow.js -->
-    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
-    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
-    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+      <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+      <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+      <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
   <body>
-    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <h1>Train a Machine Learning model with TensorFlow.JS and a Webcam!</h1>
+    <p>Try putting different objects in front of the webcam, for example,
+       a face, a cat, a pencil, etc. Whenever an object is in view, click
+       on one of the buttons to add it to that class. Take multiple images
+       of each class, by rotation or translation, to improve the model accuracy.
+       Once you are satisfied with trainin, try out the model by showing it
+       the objects.</p>
+    <video autoplay playsinline muted id="webcam" width="500" height="500"></video>
+    <div></div>
     <button id="class-a">Add A</button>
     <button id="class-b">Add B</button>
     <button id="class-c">Add C</button>
