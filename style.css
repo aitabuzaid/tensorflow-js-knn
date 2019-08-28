@@ -6,13 +6,14 @@
 }
 
 h1, p {
-  background-color: #615e5e;
+  background-color: #444444;
   padding: 20px;
   text-align: left;
   color: #fc7703
 }
 
 h1 {
+  background-color: #615e5e;
   padding: 50px;
   border-bottom: 1px solid #5D6063;
 }
@@ -35,11 +36,15 @@ video {
   text-align: center;
   border: 2px solid #5D6063;
   border-radius: 5px;
-  width: 500px;
+  width: 600px;
   box-sizing: border-box;
   margin: 20px auto;
 }
 
 body {
   text-align: center;
+}
+
+div {
+  color: #FC7703;
 }

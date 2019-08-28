@@ -48,7 +48,7 @@ async function app() {
         Count of Class A: ${count1}
         Count of Class B: ${count2}
         Count of Class C: ${count3}\n
-        prediction: ${classes[result.classIndex]}\n
+        prediction: ${classes[result.classIndex]}
         probability: ${result.confidences[result.classIndex]}
       `;
     }
