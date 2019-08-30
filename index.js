@@ -91,7 +91,7 @@ async function app() {
       </tr>
       <tr>
         <td>Probability</td>
-        <td>${result.confidences[result.classIndex]}</td>
+        <td>${Math.round(100*result.confidences[result.classIndex],2)}\%</td>
       </tr>
       `;
     }
