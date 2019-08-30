@@ -16,13 +16,13 @@ h1 {
 h2 {
   text-align: center;
   color: #FC7703;
-  background-color: #BBBBBB;
+  background-color: #615e5e;
   padding: 50px;
 }
 
 p {
   background-color: #615e5e;
-  padding: 100px 70px 100px 70px;
+  padding: 100px 70px 50px 70px;
   text-align: justify;
   color: #fc7703;
   font-size: 22;
@@ -50,10 +50,6 @@ p {
   background-color: #DD6A00;
 }
 
-#class-reset {
-
-}
-
 video {
   padding: 0px;
   text-align: center;
@@ -62,18 +58,37 @@ video {
   width: 800px;
   margin-top: 20px;
   box-sizing: border-box;
+  background-color: #000;
 }
 
 body {
   text-align: center;
-  background-color: #CCCCCC;
+  background-color: #615e5e;
 }
 
 div {
   color: #FC7703;
-  background-color: #BBBBBB;
+  background-color: #615e5e;
   font-weight: bold;
   font-size: 20;
   text-align: center;
   box-sizing: border-box;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #615e5e;
+  margin: auto;
+  padding-bottom: 20px;
+  color: #ff8c00;
+}
+
+td {
+  border: 3px solid #444444;
+  text-align: left;
+  padding: 8px;
+  background-color: #615e5e;
+  font-size: 20;
 }
