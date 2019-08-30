@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Train a model with TensorFlow.JS and a webcam!</title>
+      <title>Train a Model with TensorFlow.js and a Webcam!</title>
       <link rel="stylesheet" href="style.css">
     <!-- Load the latest version of TensorFlow.js -->
       <script src="https://unpkg.com/@tensorflow/tfjs"></script>
@@ -9,18 +9,22 @@
       <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
   <body>
-    <h1>Train a Machine Learning model with TensorFlow.JS and a Webcam!</h1>
+    <h1>Train a Machine Learning Model with TensorFlow.js and a Webcam!</h1>
     <p>Try locating different objects in front of the webcam, for example,
        a face, a cat, a pencil, etc. Whenever an object is in view, click
-       on one of the buttons to add it to a class. Take multiple images
+       on one of the buttons to add it to its class. Take multiple images
        of each class, by rotation or translation, to improve the model accuracy.
-       Once you are satisfied with the training, use the model to predict the
-       of each object.</p>
-    <video autoplay playsinline muted id="webcam" width="600" height="600"></video>
-    <div></div>
-    <button id="class-a">Add A</button>
-    <button id="class-b">Add B</button>
-    <button id="class-c">Add C</button>
+       Add the first object to class A, the second object to class B, and the
+       third to class C. Once you are satisfied with the training, use the
+       model to predict the class of each object. If you would like to start over,
+       click on the Reset button.</p>
+    <video autoplay playsinline muted id="webcam" width="800" height="600"></video>
+
+    <button class="button" id="class-a">Add A</button>
+    <button class="button" id="class-b">Add B</button>
+    <button class="button" id="class-c">Add C</button>
+    <button class="button" id="class-reset">Reset</button>
+    <h2>Results</h2>
     <div id="console"></div>
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>

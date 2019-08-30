@@ -45,11 +45,11 @@ async function app() {
 
       const classes = ['A', 'B', 'C'];
       document.getElementById('console').innerText = `
-        Count of Class A: ${count1}
-        Count of Class B: ${count2}
-        Count of Class C: ${count3}\n
-        prediction: ${classes[result.classIndex]}
-        probability: ${result.confidences[result.classIndex]}
+        Count of Class A:   ${count1}
+        Count of Class B:   ${count2}
+        Count of Class C:   ${count3}\n
+        Prediction:   ${classes[result.classIndex]}
+        Probability:   ${result.confidences[result.classIndex]}
       `;
     }
 
