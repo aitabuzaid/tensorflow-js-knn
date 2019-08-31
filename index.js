@@ -40,27 +40,7 @@ async function app() {
     count1 = 0;
     count2 = 0;
     count3 = 0;
-    document.getElementById('result-table').innerHTML = `
-    <tr>
-      <td>Count of Class A</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Count of Class A</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Count of Class A</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Prediction</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Probability</td>
-      <td>0</td>
-    </tr>`}
+    updateTable(0, 0, 0, "No class", 0);}
   );
 
   while (true) {
@@ -71,29 +51,9 @@ async function app() {
       const result = await classifier.predictClass(activation);
 
       const classes = ['A', 'B', 'C'];
+      updateTable(count1, count2, count3, classes[result.classIndex],
+        result.confidences[result.classIndex]);
 
-      document.getElementById('result-table').innerHTML = `
-      <tr>
-        <td>Count of Class A</td>
-        <td>${count1}</td>
-      </tr>
-      <tr>
-        <td>Count of Class A</td>
-        <td>${count2}</td>
-      </tr>
-      <tr>
-        <td>Count of Class A</td>
-        <td>${count3}</td>
-      </tr>
-      <tr>
-        <td>Prediction</td>
-        <td>Class ${classes[result.classIndex]}</td>
-      </tr>
-      <tr>
-        <td>Probability</td>
-        <td>${Math.round(100*result.confidences[result.classIndex],2)}\%</td>
-      </tr>
-      `;
     }
 
     // Give some breathing room by waiting for the next animation frame to
@@ -120,5 +80,30 @@ async function setupWebcam() {
     }
   });
 }
+
+function updateTable(count1, count2, count3, predClass, predPer) {
+    document.getElementById('result-table').innerHTML = `
+    <tr>
+      <td>Count of Class A</td>
+      <td>${count1}</td>
+    </tr>
+    <tr>
+      <td>Count of Class A</td>
+      <td>${count2}</td>
+    </tr>
+    <tr>
+      <td>Count of Class A</td>
+      <td>${count3}</td>
+    </tr>
+    <tr>
+      <td>Prediction</td>
+      <td>Class: ${predClass}</td>
+    </tr>
+    <tr>
+      <td>Probability</td>
+      <td>${Math.round(100*predPer,2)}\%</td>
+    </tr>
+    `;
+  }
 
 app();
