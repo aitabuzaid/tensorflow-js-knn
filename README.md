@@ -1,1 +1,1 @@
-This project uses a webcam and Tensorflow (Java Script) on top of the Mobilenet model to classify three different objects in the browser.
+This project uses a webcam and Tensorflow (Java Script) on top of the Mobilenet model to classify three different objects in the browser. The javascript code is based on the TensforFlow.js tutorial provided here: https://www.tensorflow.org/js/tutorials/transfer/image_classification
