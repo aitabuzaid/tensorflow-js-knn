@@ -88,11 +88,11 @@ function updateTable(count1, count2, count3, predClass, predPer) {
       <td>${count1}</td>
     </tr>
     <tr>
-      <td>Count of Class A</td>
+      <td>Count of Class B</td>
       <td>${count2}</td>
     </tr>
     <tr>
-      <td>Count of Class A</td>
+      <td>Count of Class C</td>
       <td>${count3}</td>
     </tr>
     <tr>
